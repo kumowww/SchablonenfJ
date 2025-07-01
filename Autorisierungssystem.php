@@ -5,7 +5,7 @@
 
 session_start();
 
-// Datenbankverbindung (SQLite für Einfachheit)
+// Datenbankverbindung (SQLite für Einfachheit) 0_0
 $db = new PDO('sqlite:auth_system.db');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -15,7 +15,7 @@ $db->exec("CREATE TABLE IF NOT EXISTS users (
     password TEXT
 )");
 
-// Registrierung / reg
+// Registrierung 
 function register($username, $password) {
     global $db;
     $hash = password_hash($password, PASSWORD_DEFAULT);
@@ -72,7 +72,7 @@ if (isset($_SESSION['user'])) {
 <html lang="de">
     <head>
     <meta charset="UTF-8">
-    <title>Berechtigungssystem</title>
+    <title>Autorisierungssystem</title>
     <style>
         body {
             background: #000;
