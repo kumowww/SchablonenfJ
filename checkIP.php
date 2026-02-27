@@ -1,3 +1,4 @@
+<?php
 function isIP($ip, $type = FILTER_FLAG_IPV4, $exludePrivAndRes = false)
 {
     // Check if the value is falsy
