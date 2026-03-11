@@ -1,7 +1,7 @@
 <?php
 /**
- * [EN] Simple wrapper for executing GET and POST requests via cURL.
- * [DE] Einfacher Wrapper zur Ausführung von GET- und POST-Anfragen über cURL.
+ * [EN] Simple wrapper for executing GET and POST requests via cURL
+ * [DE] Einfacher Wrapper zur Ausführung von GET- und POST-Anfragen über cURL
  */
 
 function send_request(string $url, string $method = 'GET', array $data = [], array $headers = []) {
